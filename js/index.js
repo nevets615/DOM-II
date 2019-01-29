@@ -4,68 +4,72 @@
 const logoHeading = 
 document.querySelector(".content-section");
 
-logoHeading.addEventListener('mouseOver', e => {
-document.querySelector(".content-section").style.color = "red";
-
+logoHeading.addEventListener('mouseover', e => {
+e.target.style.color = "red";
+console.log(e);
 });
 
 
 const h2text = document.querySelector('h2');
 h2text.addEventListener('mouseDown', e => {
-    document.querySelector("h2").innerHTML = "The mouse button is held down.";
+e.target.innerHTML = "The mouse button is held down.";
 });
 
 const h4text = document.querySelector('h4');
 logoHeading.addEventListener('wheel', e => {
 
-    let x = event.deltaX;
-    document.querySelector('h4').innerHTML = x;
-  
+e.target.style.fontSize = "20px";
 
 });
         
-const logoHeading = document.querySelector("logo-heading");
+const h4text = document.querySelector("h4");
 logoHeading.addEventListener("load", e => {
-
-    document.querySelector("logo-heading").focus();
+e.Target.focus();
 
 });
             
-const logoHeading = document.querySelector('logo-heading');
+const contentSection = document.querySelector('.content-section');
 logoHeading.addEventListener('blur', e => {
-    document.querySelector("logo-heading").blur();
+    e.target.blur();
 });
                 
-const logoHeading = document.querySelector('logo-heading');
-logoHeading.addEventListener('resize', e => {
-
+const window = document.querySelector('.window');
+window.addEventListener('resize', e => {
+let a = 0;
+let y = x += 2
+    e.target.innerHTML = y;
     
-    
-
 });
                     
-const logoHeading = document.querySelector('logo-heading');
+const inversecontent = document.querySelector('.content-section inverse-content');
 logoHeading.addEventListener('scroll', e => {
 
-    document.getElementById("logo-heading").innerHTML = "something happened";
+  e.target.innerHTML = "something happened";
 
 });
                     
-const logoHeading = document.querySelector('logo-heading');
+const contentdestination = document.querySelector('.content-destination');
 logoHeading.addEventListener('select', e => {
 
-    document.querySelector("logo-heading").innerHTML = "something happened";
+    e.target.innerHTML = "something happened";
 
 
 });
                             
-const logoHeading = document.querySelector('logo-heading');
+const logoHeading = document.querySelector('.logo-heading');
 logoHeading.addEventListener('dblclick', e => {
-
+e.tasrget.innerHTML = "I was double-clicked!";
 });
                                 
-const logoHeading = document.querySelector('logo-heading');
-logoHeading.addEventListener('click', e => {
+const newbtn = document.querySelector('btn');
+newbtn.addEventListener('click', e => {
+e.target.alert("Hello World!");
+      
+});
+
+const navbar = document.querySelector(".nav");
+navbar.addEventListener('click', e => {
+    e.preventDefault();
 
 
 });
